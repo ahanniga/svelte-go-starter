@@ -1,5 +1,11 @@
 <script>
   import Link from "./Link.svelte";
+    let navbarOpen = false;
+
+  function setNavbarOpen() {
+    navbarOpen = !navbarOpen;
+  }
+
 </script>
 
 <nav
@@ -17,7 +23,22 @@
       >
         Svelte Go Template
       </Link>
+      <button
+      class="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+      type="button"
+      on:click="{setNavbarOpen}"
+    >
+      <i class="fa fa-bars"></i>
+    </button>
     </div>
+
+    <div
+      class="lg:flex flex-grow items-center {navbarOpen ? 'block':'hidden'}"
+      id="example-navbar-warning"
+    >
+
+
+
     <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
       <li class="flex items-center">
         <Link

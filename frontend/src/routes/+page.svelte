@@ -21,7 +21,14 @@
     Some responsive pages to demonstrate the template
   </p>
   
-  <div class="h-32 md:h-40"></div>
+  <div class="font-sans text-gray-400 h-32 md:h-40 pt-8">
+    <p>This is a starter template that provides a Svelte front-end coupled to a Go backend.</p> 
+    <p>All the code is packaged into a single, self-contained binary making it ideal for container deployments. </p>
+    <p>&nbsp;</p>
+    <p>It works by building the frontend using Svelte's <code class="text-green-500">adapter-static</code> plugin. </p>
+    <p>The compiled output is embedded in the Go app using the <code class="text-yellow-500">//go:embed</code> directive. </p>
+    <p>Single or multiple page apps are possible using simple Svelte <a class="text-green-500" href="https://learn.svelte.dev/tutorial/layouts">routing rules</a>.</p>
+  </div>
 
   <div class="grid gap-8 md:grid-cols-2">
     <div class="flex flex-col justify-center">
@@ -32,4 +39,4 @@
   </div>
 
 
-</div>
+</div>  

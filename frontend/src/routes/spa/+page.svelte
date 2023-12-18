@@ -18,6 +18,7 @@
   });
 
   const getWeather = () => {
+    weatherInfo = [];
     fetch("/api/weather", {
       method: "GET",
       headers: { Accept: "application/json" },
@@ -77,7 +78,7 @@
   <p
   class="font-sans font-bold text-gray-200 text-2xl"
   >
-  Backend data fetch
+  Backend data fetch <a href="##" on:click={getWeather}><i style="margin-left:10px" class="fa fa-refresh text-green-600"></i></a>
   </p>
 
   <div class="block w-full mt-5 mb-5 overflow-x-auto">
